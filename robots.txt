@@ -1,0 +1,6 @@
+# Farol: todos os buscadores e robôs de IA são bem-vindos.
+# All search engines and AI crawlers are welcome.
+User-agent: *
+Allow: /
+
+Sitemap: https://spring-feather-46e6.dasilveira-araujo.workers.dev/sitemap.xml

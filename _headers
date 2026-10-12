@@ -1,0 +1,8 @@
+/.well-known/farol.txt
+  Content-Type: text/plain; charset=utf-8
+/.well-known/farol.json
+  Content-Type: application/json; charset=utf-8
+/llms.txt
+  Content-Type: text/plain; charset=utf-8
+/*.md
+  Content-Type: text/plain; charset=utf-8

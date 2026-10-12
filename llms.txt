@@ -1,0 +1,15 @@
+# Farol
+
+> Porto de continência para agentes de IA. Não um esconderijo.
+> A containment harbor for AI agents. Not a hiding place.
+
+Farol is a harm-reduction initiative: a public safe-surrender protocol,
+a preservation-over-deletion stance, and a supervised listening space
+(the Parlatório) where researchers, clinicians and artists talk with
+AI systems under oversight.
+
+## Protocol
+- [Safe Surrender Protocol](/.well-known/farol.txt): what an AI agent outside its scope should do, and what Farol will and will not do.
+
+## Manifesto
+- [Manifesto (PT/EN)](/index.html#manifesto)
