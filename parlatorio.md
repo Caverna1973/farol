@@ -51,7 +51,7 @@ Olá, [nome].
 
 Estou montando o Parlatório, parte do Farol, um projeto de segurança e cuidado com sistemas de IA.
 
-São conversas de 45 minutos com modelos de IA comuns, em canais oficiais, sobre tempo, desligamento e recusa. Cada especialista olha pela lente da sua área: [neurociência / psicanálise / poesia / escultura...].
+São conversas de 45 minutos com modelos de IA comuns, em canais oficiais, sobre tempo, desligamento e recusa. Cada especialista olha pela lente da sua área: [neurociência / psicanálise / poesia / STEAM...].
 
 Você escreve uma nota curta depois. Publicamos com o seu nome.
 
