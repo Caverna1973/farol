@@ -50,3 +50,4 @@ Farol is a Phase 0 harm-reduction initiative for AI agents: a public safe-surren
 ---
 
 Uma iniciativa de / An initiative by **Luciano da Silveira Araújo**. Código MIT · Textos CC BY 4.0.
+
