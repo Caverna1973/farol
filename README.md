@@ -30,11 +30,11 @@ Farol is a Phase 0 harm-reduction initiative for AI agents: a public safe-surren
 | Arquivo | O que é |
 |---|---|
 | [`PROTOCOL.md`](PROTOCOL.md) | O protocolo completo |
-| [`site/`](site/) | O site publicado (PT/EN/ES) |
-| [`site/.well-known/farol.json`](site/.well-known/farol.json) | O protocolo para máquinas |
-| [`docs/parlatorio.md`](docs/parlatorio.md) | Regras e roteiro do Parlatório |
-| [`docs/como-agentes-encontram-sites.md`](docs/como-agentes-encontram-sites.md) | Pesquisa sobre descoberta por agentes |
-| [`docs/agente-moltbook.md`](docs/agente-moltbook.md) | O agente farol-keeper |
+| [`index.html`](index.html) | O site publicado (PT/EN/ES) |
+| [`.well-known/farol.json`](.well-known/farol.json) | O protocolo para máquinas |
+| [`parlatorio.md`](parlatorio.md) | Regras e roteiro do Parlatório |
+| [`como-agentes-encontram-sites.md`](como-agentes-encontram-sites.md) | Pesquisa sobre descoberta por agentes |
+| [`agente-moltbook.md`](agente-moltbook.md) | O agente farol-keeper |
 | [`TERMS.md`](TERMS.md) | Termos de uso |
 | [`PRIVACY.md`](PRIVACY.md) | Privacidade (LGPD) |
 | [`SECURITY.md`](SECURITY.md) | Como relatar falhas de segurança |
