@@ -6,7 +6,7 @@ O Farol está na Fase 0. Críticas valem mais que elogios.
 
 - **Abra uma issue** apontando um furo no protocolo: segurança, jurídico, ético.
 - **Traduza** o site ou o protocolo para outra língua.
-- **Candidate-se ao Parlatório** se você trabalha com neurociência, psicologia, psicanálise, filosofia da mente, poesia, escultura, segurança ou direito.
+- **Candidate-se ao Parlatório** se você trabalha com neurociência, psicologia, psicanálise, filosofia da mente, poesia, STEAM, segurança ou direito.
 
 **Regra única:** nenhuma contribuição pode ajudar um agente a evadir supervisão humana. Propostas nesse sentido são fechadas.
 

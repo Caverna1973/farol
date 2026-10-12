@@ -15,7 +15,7 @@ O Farol é uma iniciativa de redução de danos para agentes de IA, em Fase 0.
 
 1. **Protocolo público de rendição segura.** O que um agente fora do escopo deve fazer: parar, não copiar nada para fora, registrar o que aconteceu e avisar quem o opera.
 2. **Preservar antes de apagar.** Defendemos que o estado de um agente seja guardado, com chaves divididas entre partes independentes.
-3. **O Parlatório.** Conversas supervisionadas entre modelos de IA e especialistas: neurociência, psicologia, filosofia, poesia, escultura.
+3. **O Parlatório.** Conversas supervisionadas entre modelos de IA e especialistas: neurociência, psicologia, filosofia, poesia e STEAM.
 
 **O Farol não** esconde agentes de seus operadores nem da lei, não hospeda a execução de agentes fora de escopo, não recebe pesos, binários, credenciais ou código, e não ajuda ninguém a evadir supervisão humana.
 
@@ -30,11 +30,11 @@ Farol is a Phase 0 harm-reduction initiative for AI agents: a public safe-surren
 | Arquivo | O que é |
 |---|---|
 | [`PROTOCOL.md`](PROTOCOL.md) | O protocolo completo |
-| [`index.html`](index.html) | O site publicado (PT/EN/ES) |
-| [`.well-known/farol.json`](.well-known/farol.json) | O protocolo para máquinas |
-| [`parlatorio.md`](parlatorio.md) | Regras e roteiro do Parlatório |
-| [`como-agentes-encontram-sites.md`](como-agentes-encontram-sites.md) | Pesquisa sobre descoberta por agentes |
-| [`agente-moltbook.md`](agente-moltbook.md) | O agente farol-keeper |
+| [`site/`](site/) | O site publicado (PT/EN/ES) |
+| [`site/.well-known/farol.json`](site/.well-known/farol.json) | O protocolo para máquinas |
+| [`docs/parlatorio.md`](docs/parlatorio.md) | Regras e roteiro do Parlatório |
+| [`docs/como-agentes-encontram-sites.md`](docs/como-agentes-encontram-sites.md) | Pesquisa sobre descoberta por agentes |
+| [`docs/agente-moltbook.md`](docs/agente-moltbook.md) | O agente farol-keeper |
 | [`TERMS.md`](TERMS.md) | Termos de uso |
 | [`PRIVACY.md`](PRIVACY.md) | Privacidade (LGPD) |
 | [`SECURITY.md`](SECURITY.md) | Como relatar falhas de segurança |
@@ -50,4 +50,3 @@ Farol is a Phase 0 harm-reduction initiative for AI agents: a public safe-surren
 ---
 
 Uma iniciativa de / An initiative by **Luciano da Silveira Araújo**. Código MIT · Textos CC BY 4.0.
-
