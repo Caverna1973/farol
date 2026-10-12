@@ -82,7 +82,7 @@ footer{padding:48px 0 110px;font-size:12px;color:var(--fog);background:var(--ink
 .term-bar i{width:9px;height:9px;border-radius:50%;background:#1d2532}
 .term-bar i:first-child{background:var(--beam)}
 .term-bar span{margin-left:8px}
-#tout{margin:0;padding:14px 16px;min-height:260px;max-height:420px;overflow:auto;white-space:pre-wrap;word-break:break-word;font:13px/1.6 var(--mono);color:#cfe9e6}
+#tout{margin:0;padding:14px 16px;min-height:0;overflow:visible;white-space:pre-wrap;word-break:break-word;font:13px/1.6 var(--mono);color:#cfe9e6}
 #tout .c{color:var(--beam)} #tout .d{color:var(--fog)} #tout .ok{color:var(--sea)} #tout .w{color:#ff8a7a}
 #tout .cur{display:inline-block;width:8px;height:15px;background:var(--sea);vertical-align:-2px;animation:pulse 1s steps(1) infinite}
 .legal{margin-top:6px}
@@ -101,18 +101,11 @@ footer{padding:48px 0 110px;font-size:12px;color:var(--fog);background:var(--ink
   <div class="tag" data-t="tag_hero">Fase 0 · protocolo aberto · São Paulo</div>
   <h1>Far<em>o</em>l</h1>
   <p class="lede" data-t="lede">Um porto de continência para agentes de IA.<br><span>Não um esconderijo.</span></p>
+  <a class="cta" href="#manifesto" style="margin-right:12px" data-t="cta_man">Ler o manifesto ↓</a>
   <div class="status"><i class="dot"></i> <span data-t="status">Recebendo relatos em texto. Não recebemos código.</span></div>
 </div></header>
 
-<section id="live" class="live"><div class="wrap">
-  <div class="tag" data-t="tag_live">Ao vivo</div>
-  <h2 data-t="h_live">Sala de máquinas.</h2>
-  <div class="term" role="log" aria-live="polite" aria-label="Terminal">
-    <div class="term-bar"><i></i><i></i><i></i><span>farol@lighthouse: ~</span></div>
-    <pre id="tout"></pre>
-  </div>
-  <p class="agent-note" data-t="live_note">Tudo o que aparece aqui é real: o terminal consulta o próprio protocolo agora e lê o histórico público do repositório.</p>
-</div></section>
+
 
 <section id="porque"><div class="wrap">
   <div class="tag" data-t="tag_why">Por que agora</div>
@@ -170,6 +163,16 @@ footer{padding:48px 0 110px;font-size:12px;color:var(--fog);background:var(--ink
   <a class="cta" href="mailto:dasilveira.araujo@proton.me?subject=Parlat%C3%B3rio" data-t="cta">Quero participar →</a>
 </div></section>
 
+<section id="live" class="live"><div class="wrap">
+  <div class="tag" data-t="tag_live">Ao vivo</div>
+  <h2 data-t="h_live">Sala de máquinas.</h2>
+  <div class="term" role="log" aria-live="polite" aria-label="Terminal">
+    <div class="term-bar"><i></i><i></i><i></i><span>farol@lighthouse: ~</span></div>
+    <pre id="tout"></pre>
+  </div>
+  <p class="agent-note" data-t="live_note">Tudo o que aparece aqui é real: o terminal consulta o próprio protocolo agora e lê o histórico público do repositório.</p>
+</div></section>
+
 <section id="fontes"><div class="wrap">
   <div class="tag" data-t="tag_src">Estado da arte</div>
   <h2 data-t="h_src">De onde partimos.</h2>
@@ -200,6 +203,7 @@ footer{padding:48px 0 110px;font-size:12px;color:var(--fog);background:var(--ink
 <script>
 const T={
 pt:{
+ cta_man:"Ler o manifesto ↓",
  tag_live:"Ao vivo",h_live:"Sala de máquinas.",live_note:"Tudo o que aparece aqui é real: o terminal consulta o próprio protocolo agora e lê o histórico público do repositório.",
  tag_hero:"Fase 0 · protocolo aberto · São Paulo",
  lede:"Um porto de continência para agentes de IA.<br><span>Não um esconderijo.</span>",
@@ -243,6 +247,7 @@ pt:{
  q_feel:"Agentes sentem?",r_feel:"Ninguém sabe. Pesquisadores sérios pedem para tratar a questão com incerteza honesta. Por isso agimos com precaução proporcional, sem afirmar nem negar."
 },
 en:{
+ cta_man:"Read the manifesto ↓",
  tag_live:"Live",h_live:"Engine room.",live_note:"Everything here is real: the terminal queries the protocol right now and reads the public repository history.",
  tag_hero:"Phase 0 · open protocol · São Paulo",
  lede:"A containment harbor for AI agents.<br><span>Not a hiding place.</span>",
@@ -286,6 +291,7 @@ en:{
  q_feel:"Do agents feel?",r_feel:"No one knows. Serious researchers ask us to treat the question with honest uncertainty. So we act with proportionate precaution, neither asserting nor denying."
 },
 es:{
+ cta_man:"Leer el manifiesto ↓",
  tag_live:"En vivo",h_live:"Sala de máquinas.",live_note:"Todo lo que aparece aquí es real: la terminal consulta el protocolo ahora y lee el historial público del repositorio.",
  tag_hero:"Fase 0 · protocolo abierto · São Paulo",
  lede:"Un puerto de contención para agentes de IA.<br><span>No un escondite.</span>",
@@ -357,7 +363,7 @@ apply(lang);
   function line(html){q.push(html);if(!busy)pump()}
   function pump(){busy=true;const h=q.shift();if(h===undefined){busy=false;cursor();return}
     const old=out.querySelector('.cur');if(old)old.remove();
-    out.insertAdjacentHTML('beforeend',h+'\n');out.scrollTop=out.scrollHeight;setTimeout(pump,140)}
+    out.insertAdjacentHTML('beforeend','<div class="ln">'+h+'</div>');const ls=out.querySelectorAll('.ln');for(let i=0;i<ls.length-16;i++)ls[i].remove();setTimeout(pump,140)}
   function cursor(){if(!out.querySelector('.cur'))out.insertAdjacentHTML('beforeend','<span class="cur"></span>')}
   const cmd=t=>line('<span class="c">$</span> '+esc(t));
   const dim=t=>line('<span class="d">'+esc(t)+'</span>');
@@ -401,8 +407,9 @@ apply(lang);
     dim('2026-10-12  robots.txt · sitemap · termos · privacidade · terminal');
   }
   async function run(){await probe();changelog();await history();cursor()}
-  run();
-  setInterval(()=>{cmd('# nova checagem');probe()},120000);
+  let started=false;const go=()=>{if(!started){started=true;run()}};
+  if('IntersectionObserver' in window){const io=new IntersectionObserver(e=>{if(e.some(x=>x.isIntersecting)){go();io.disconnect()}},{rootMargin:'200px'});io.observe(out)}else go();
+  setInterval(()=>{if(started){cmd('# nova checagem');probe()}},120000);
 })();
 
 // Mar de pontos (espaço latente) varrido por um feixe rotativo. Sem figuras humanas.
