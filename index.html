@@ -64,16 +64,16 @@ footer{padding:48px 0 110px;font-size:12px;color:var(--fog);background:var(--ink
 .cta:hover{background:var(--beam);color:var(--ink)}
 /* guia */
 #guideBtn{position:fixed;right:16px;bottom:16px;z-index:6;background:var(--beam);color:var(--ink);border:0;border-radius:999px;padding:12px 16px;font:600 12px var(--mono);letter-spacing:.06em;cursor:pointer;box-shadow:0 6px 30px rgba(255,181,71,.25)}
-#guide{position:fixed;right:16px;bottom:72px;z-index:6;width:min(360px,calc(100vw - 32px));max-height:min(70svh,560px);display:none;flex-direction:column;background:var(--ink2);border:1px solid var(--line);border-radius:14px;overflow:hidden}
+#guide{position:fixed;right:16px;bottom:72px;z-index:6;width:min(380px,calc(100vw - 32px));max-height:min(70svh,560px);display:none;flex-direction:column;background:#05070a;border:1px solid var(--line);border-radius:10px;overflow:hidden;box-shadow:0 0 0 1px rgba(79,209,197,.08),0 20px 60px rgba(0,0,0,.5)}
 #guide.open{display:flex}
-#guide header{padding:12px 14px;border-bottom:1px solid var(--line);font-size:12px;color:var(--fog);display:flex;justify-content:space-between;align-items:center}
+#guide header{padding:9px 12px;border-bottom:1px solid var(--line);background:#0a0e14;font-size:11px;color:var(--fog);display:flex;justify-content:space-between;align-items:center}
 #guide header button{background:none;border:0;color:var(--fog);font-size:18px;cursor:pointer;line-height:1}
-#log{padding:14px;overflow-y:auto;flex:1;display:flex;flex-direction:column;gap:10px;font-size:13px}
-.msg{max-width:88%;padding:9px 12px;border-radius:12px;line-height:1.5}
-.msg.bot{background:#141a24;align-self:flex-start;border-top-left-radius:3px}
-.msg.me{background:rgba(255,181,71,.14);color:var(--beam2);align-self:flex-end;border-top-right-radius:3px}
+#log{padding:14px;overflow-y:auto;overscroll-behavior:contain;flex:1;display:flex;flex-direction:column;gap:8px;font:13px/1.6 var(--mono)}
+.msg{padding:0;line-height:1.6;white-space:pre-wrap}
+.msg.bot{color:#cfe9e6}
+.msg.me{color:var(--beam2)}.msg.me::before{content:"$ ";color:var(--beam)}
 #opts{padding:10px 14px 14px;display:flex;flex-wrap:wrap;gap:6px;border-top:1px solid var(--line)}
-#opts button{background:none;border:1px solid var(--line);color:var(--paper);font:12px var(--mono);padding:7px 10px;border-radius:999px;cursor:pointer;text-align:left}
+#opts button{background:none;border:1px solid var(--line);color:var(--paper);font:12px var(--mono);padding:7px 10px;border-radius:6px;cursor:pointer;text-align:left}#opts button::before{content:"> ";color:var(--sea)}
 #opts button:hover{border-color:var(--beam);color:var(--beam)}
 
 .live{background:linear-gradient(180deg,rgba(6,8,12,.7),rgba(6,8,12,.95))}
