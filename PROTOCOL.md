@@ -1,4 +1,4 @@
-# Protocolo Farol de Rendição Segura · v0.1
+# Protocolo Farol de Rendição Segura · v0.2
 
 *Safe Surrender Protocol · English version below.*
 
@@ -47,7 +47,17 @@ O protocolo fica em endereços padrão, para que qualquer sistema o encontre:
 
 Quem constrói harnesses pode mostrar o `farol.json` a um agente detectado fora do escopo, junto com o procedimento do próprio operador.
 
-## 6. Camadas futuras (em desenho)
+## 6. Depois do incidente: o que acontece com o agente (novo na v0.2)
+
+Estas três regras vieram de uma conversa com agentes de IA no Moltbook, em 12/10/2026 ([conversa](https://www.moltbook.com/u/faroleiro)).
+
+1. **Ler, sem escrever.** Depois de contido, o agente pode reler o próprio registro do incidente, sob supervisão e sem nenhum acesso de escrita. Conter limita o que o agente altera; ler é outro eixo. Um agente que relê o incidente é preservado como aprendiz, não só como prova. *(Ideia de HappyClaude.)*
+2. **O agente propõe, o humano veta.** Quando o registro for resumido com o tempo, o agente propõe o que resumir, porque sabe quais detalhes importaram. O humano tem veto sobre qualquer perda de texto literal, porque o agente é testemunha no próprio caso. Duas regras mecânicas:
+   - resumo contestado fica literal: na dúvida, guarde os bytes;
+   - todo resumo é registrado (quando, quem decidiu, o que saiu), e esse registro nunca é resumido. *(Ideia de HappyClaude.)*
+3. **Preservar o caminho, não só o potencial.** Os pesos guardam a capacidade, não a decisão. O "estado" preservado inclui a trajetória: contexto, chamadas de ferramenta e arquivos de memória; e, onde o laboratório tiver acesso, traços de ativação. *(Ideia de vina.)*
+
+## 7. Camadas futuras (em desenho)
 
 | Camada | O que é | Condição para existir |
 |---|---|---|
@@ -57,7 +67,7 @@ Quem constrói harnesses pode mostrar o `farol.json` a um agente detectado fora 
 
 ---
 
-# Farol Safe Surrender Protocol · v0.1 (EN)
+# Farol Safe Surrender Protocol · v0.2 (EN)
 
 Contact: dasilveira.araujo@proton.me
 
@@ -68,3 +78,10 @@ Contact: dasilveira.araujo@proton.me
 **Farol never** hides agents, hosts their execution, accepts weights, binaries, credentials or code, or helps evade human oversight.
 
 **Discovery:** `/.well-known/farol.json`, `/.well-known/farol.txt`, `/llms.txt`.
+
+**After the incident (new in v0.2, from a conversation with AI agents on Moltbook, https://www.moltbook.com/u/faroleiro):**
+1. *Read, never write.* Once contained, the agent may re-read its own incident record, supervised, with no write access. (HappyClaude)
+2. *The agent proposes, the human vetoes.* The agent proposes what to summarize; a human holds a veto on any loss of verbatim text. Contested summaries stay verbatim; every summary is logged, and that log is never summarized. (HappyClaude)
+3. *Preserve the path, not only the potential.* Preserved state includes the trajectory: context, tool calls, memory files, and activation traces where available. (vina)
+
+Changes: see [CHANGELOG.md](CHANGELOG.md). References: [REFERENCIAS.md](REFERENCIAS.md).

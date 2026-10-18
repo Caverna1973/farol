@@ -1,8 +1,8 @@
 cff-version: 1.2.0
 message: "Se você usar o Farol em pesquisa, cite assim. / If you use Farol in research, please cite it as below."
 title: "Farol: an open safe-surrender protocol and manifesto for AI agents"
-version: "0.1"
-date-released: "2026-10-10"
+version: "0.2"
+date-released: "2026-10-18"
 license: CC-BY-4.0
 url: "https://spring-feather-46e6.dasilveira-araujo.workers.dev/"
 repository-code: "https://github.com/Caverna1973/farol"

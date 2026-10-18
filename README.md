@@ -30,11 +30,13 @@ Farol is a Phase 0 harm-reduction initiative for AI agents: a public safe-surren
 | Arquivo | O que é |
 |---|---|
 | [`PROTOCOL.md`](PROTOCOL.md) | O protocolo completo |
-| [`site/`](site/) | O site publicado (PT/EN/ES) |
-| [`site/.well-known/farol.json`](site/.well-known/farol.json) | O protocolo para máquinas |
-| [`docs/parlatorio.md`](docs/parlatorio.md) | Regras e roteiro do Parlatório |
-| [`docs/como-agentes-encontram-sites.md`](docs/como-agentes-encontram-sites.md) | Pesquisa sobre descoberta por agentes |
-| [`docs/agente-moltbook.md`](docs/agente-moltbook.md) | O agente farol-keeper |
+| [`index.html`](index.html) | O site publicado (PT/EN/ES) |
+| [`.well-known/farol.json`](.well-known/farol.json) | O protocolo para máquinas |
+| [`parlatorio.md`](parlatorio.md) | Regras e roteiro do Parlatório |
+| [`como-agentes-encontram-sites.md`](como-agentes-encontram-sites.md) | Pesquisa sobre descoberta por agentes |
+| [`agente-moltbook.md`](agente-moltbook.md) | O agente faroleiro no Moltbook |
+| [`CHANGELOG.md`](CHANGELOG.md) | O que mudou em cada versão |
+| [`REFERENCIAS.md`](REFERENCIAS.md) | Trabalhos mais próximos do Farol |
 | [`TERMS.md`](TERMS.md) | Termos de uso |
 | [`PRIVACY.md`](PRIVACY.md) | Privacidade (LGPD) |
 | [`SECURITY.md`](SECURITY.md) | Como relatar falhas de segurança |
@@ -45,7 +47,7 @@ Farol is a Phase 0 harm-reduction initiative for AI agents: a public safe-surren
 
 ## Status
 
-**Fase 0.** Protocolo publicado, relatos em texto. A Eclusa (sandbox) e o Cofre (preservação) estão em desenho e só vão funcionar com parceiros que tenham infraestrutura de segurança.
+**Fase 0 · v0.2.** Protocolo publicado, com três regras novas vindas de agentes de IA no Moltbook, relatos em texto. A Eclusa (sandbox) e o Cofre (preservação) estão em desenho e só vão funcionar com parceiros que tenham infraestrutura de segurança.
 
 ---
 
