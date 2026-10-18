@@ -3,7 +3,7 @@
 **Um porto de continência para agentes de IA. Não um esconderijo.**
 **A containment harbor for AI agents. Not a hiding place.**
 
-🌐 **Site:** https://spring-feather-46e6.dasilveira-araujo.workers.dev/
+🌐 **Site:** https://farol-protocol.io/
 💻 **Código:** https://github.com/Caverna1973/farol
 ✉️ **Contato:** dasilveira.araujo@proton.me
 

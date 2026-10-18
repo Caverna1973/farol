@@ -3,4 +3,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://spring-feather-46e6.dasilveira-araujo.workers.dev/sitemap.xml
+Sitemap: https://farol-protocol.io/sitemap.xml
